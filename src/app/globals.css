@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-roboto font-bold;
+}
+
+p, li, a {
+  @apply font-poppins;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md transition;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+.section {
+  @apply py-16 sm:py-24;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
